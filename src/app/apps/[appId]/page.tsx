@@ -3,11 +3,11 @@ import { getAllApps } from "@/lib/Apps";
 import { IApps } from "@/types/apps.type";
 import { notFound } from "next/navigation";
 
-export const generateStaticParams = async () => {
-    const getApps = await getAllApps()
+// export const generateStaticParams = async () => {
+//     const getApps = await getAllApps()
 
-    return getApps.map((app: IApps) => ({ appId: String(app.id) }))
-}
+//     return getApps.map((app: IApps) => ({ appId: String(app.id) }))
+// }
 
 interface AppDetailsProms {
     params: {
