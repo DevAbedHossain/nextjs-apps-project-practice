@@ -18,7 +18,7 @@ interface AppDetailsProms {
 
 const AppDetailsPage = async ({ params }: AppDetailsProms) => {
 
-    const { appId } = params;
+    const { appId } = await params;
 
     const apps = await getAllApps();
 
