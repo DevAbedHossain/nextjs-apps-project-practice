@@ -2,6 +2,7 @@
 import { AppContext } from '@/context/AppProvider';
 import { IApps } from '@/types/apps.type';
 import React, { useContext } from 'react';
+import { toast } from 'react-toastify/unstyled';
 
 const InstallAppButton = ({ app }: { app: IApps }) => {
 
@@ -17,12 +18,12 @@ const InstallAppButton = ({ app }: { app: IApps }) => {
         console.log(isInstalled)
 
         if (isInstalled) {
-            return alert("Already Installed")
+            return toast.error("Already Installed")
         }
 
         setInstalledApps([...installedApps, app])
 
-        alert(`${app.title} install successfully`)
+        toast.success(`${app.title} install successfully`)
     }
 
     return (
