@@ -1,0 +1,220 @@
+{
+  "apps": [
+    {
+      "image": "https://cdn-icons-png.flaticon.com/512/5968/5968292.png",
+      "title": "JavaScript",
+      "companyName": "MetaCode",
+      "id": 1,
+      "description": "A powerful programming language for building interactive websites, web applications, and modern software.",
+      "size": 45,
+      "reviews": 12500,
+      "ratingAvg": 4.8,
+      "downloads": 2500000,
+      "ratings": [
+        { "name": "1 star", "count": 120 },
+        { "name": "2 star", "count": 180 },
+        { "name": "3 star", "count": 450 },
+        { "name": "4 star", "count": 2150 },
+        { "name": "5 star", "count": 9600 }
+      ]
+    },
+    {
+      "image": "https://cdn-icons-png.flaticon.com/512/5968/5968350.png",
+      "title": "Python",
+      "companyName": "Python Software Foundation",
+      "id": 2,
+      "description": "A beginner-friendly programming language widely used for web development, automation, data science, and artificial intelligence.",
+      "size": 62,
+      "reviews": 18400,
+      "ratingAvg": 4.9,
+      "downloads": 4200000,
+      "ratings": [
+        { "name": "1 star", "count": 95 },
+        { "name": "2 star", "count": 140 },
+        { "name": "3 star", "count": 320 },
+        { "name": "4 star", "count": 2850 },
+        { "name": "5 star", "count": 14995 }
+      ]
+    },
+    {
+      "image": "https://cdn-icons-png.flaticon.com/512/919/919851.png",
+      "title": "React",
+      "companyName": "Meta",
+      "id": 3,
+      "description": "A popular JavaScript library for creating fast and reusable user interfaces using components.",
+      "size": 38,
+      "reviews": 15600,
+      "ratingAvg": 4.8,
+      "downloads": 3800000,
+      "ratings": [
+        { "name": "1 star", "count": 100 },
+        { "name": "2 star", "count": 150 },
+        { "name": "3 star", "count": 390 },
+        { "name": "4 star", "count": 2600 },
+        { "name": "5 star", "count": 12360 }
+      ]
+    },
+    {
+      "image": "https://cdn-icons-png.flaticon.com/512/919/919832.png",
+      "title": "TypeScript",
+      "companyName": "Microsoft",
+      "id": 4,
+      "description": "A strongly typed programming language that builds on JavaScript and helps developers create reliable applications.",
+      "size": 52,
+      "reviews": 13200,
+      "ratingAvg": 4.7,
+      "downloads": 3100000,
+      "ratings": [
+        { "name": "1 star", "count": 130 },
+        { "name": "2 star", "count": 210 },
+        { "name": "3 star", "count": 520 },
+        { "name": "4 star", "count": 2940 },
+        { "name": "5 star", "count": 9400 }
+      ]
+    },
+    {
+      "image": "https://cdn-icons-png.flaticon.com/512/919/919825.png",
+      "title": "Node.js",
+      "companyName": "OpenJS Foundation",
+      "id": 5,
+      "description": "A JavaScript runtime that allows developers to build scalable backend applications and APIs using JavaScript.",
+      "size": 74,
+      "reviews": 11800,
+      "ratingAvg": 4.6,
+      "downloads": 2900000,
+      "ratings": [
+        { "name": "1 star", "count": 180 },
+        { "name": "2 star", "count": 240 },
+        { "name": "3 star", "count": 620 },
+        { "name": "4 star", "count": 2800 },
+        { "name": "5 star", "count": 7960 }
+      ]
+    },
+    {
+      "image": "https://cdn-icons-png.flaticon.com/512/919/919853.png",
+      "title": "Next.js",
+      "companyName": "Vercel",
+      "id": 6,
+      "description": "A React framework for building modern full-stack web applications with routing, server rendering, and optimized performance.",
+      "size": 48,
+      "reviews": 10200,
+      "ratingAvg": 4.8,
+      "downloads": 2700000,
+      "ratings": [
+        { "name": "1 star", "count": 80 },
+        { "name": "2 star", "count": 130 },
+        { "name": "3 star", "count": 310 },
+        { "name": "4 star", "count": 2050 },
+        { "name": "5 star", "count": 7630 }
+      ]
+    },
+    {
+      "image": "https://cdn-icons-png.flaticon.com/512/732/732212.png",
+      "title": "HTML5",
+      "companyName": "W3C",
+      "id": 7,
+      "description": "The standard markup language used to structure content and build the foundation of modern web pages.",
+      "size": 25,
+      "reviews": 8900,
+      "ratingAvg": 4.7,
+      "downloads": 1900000,
+      "ratings": [
+        { "name": "1 star", "count": 70 },
+        { "name": "2 star", "count": 110 },
+        { "name": "3 star", "count": 280 },
+        { "name": "4 star", "count": 1800 },
+        { "name": "5 star", "count": 6640 }
+      ]
+    },
+    {
+      "image": "https://cdn-icons-png.flaticon.com/512/732/732190.png",
+      "title": "CSS3",
+      "companyName": "W3C",
+      "id": 8,
+      "description": "A stylesheet language used to design, layout, animate, and make websites responsive across different devices.",
+      "size": 31,
+      "reviews": 9400,
+      "ratingAvg": 4.8,
+      "downloads": 2100000,
+      "ratings": [
+        { "name": "1 star", "count": 65 },
+        { "name": "2 star", "count": 120 },
+        { "name": "3 star", "count": 300 },
+        { "name": "4 star", "count": 1920 },
+        { "name": "5 star", "count": 6995 }
+      ]
+    },
+    {
+      "image": "https://cdn-icons-png.flaticon.com/512/5968/5968672.png",
+      "title": "GitHub",
+      "companyName": "GitHub",
+      "id": 9,
+      "description": "A development platform for hosting code, collaborating with teams, managing repositories, and tracking software projects.",
+      "size": 68,
+      "reviews": 17600,
+      "ratingAvg": 4.9,
+      "downloads": 3500000,
+      "ratings": [
+        { "name": "1 star", "count": 75 },
+        { "name": "2 star", "count": 100 },
+        { "name": "3 star", "count": 280 },
+        { "name": "4 star", "count": 2250 },
+        { "name": "5 star", "count": 14895 }
+      ]
+    },
+    {
+      "image": "https://cdn-icons-png.flaticon.com/512/5968/5968705.png",
+      "title": "Docker",
+      "companyName": "Docker Inc.",
+      "id": 10,
+      "description": "A platform for developing, shipping, and running applications inside lightweight and portable containers.",
+      "size": 86,
+      "reviews": 8600,
+      "ratingAvg": 4.6,
+      "downloads": 1750000,
+      "ratings": [
+        { "name": "1 star", "count": 140 },
+        { "name": "2 star", "count": 190 },
+        { "name": "3 star", "count": 410 },
+        { "name": "4 star", "count": 2100 },
+        { "name": "5 star", "count": 5760 }
+      ]
+    },
+    {
+      "image": "https://cdn-icons-png.flaticon.com/512/2111/2111288.png",
+      "title": "Figma",
+      "companyName": "Figma Inc.",
+      "id": 11,
+      "description": "A collaborative design tool for creating user interfaces, prototypes, wireframes, and design systems.",
+      "size": 92,
+      "reviews": 14500,
+      "ratingAvg": 4.8,
+      "downloads": 2300000,
+      "ratings": [
+        { "name": "1 star", "count": 90 },
+        { "name": "2 star", "count": 150 },
+        { "name": "3 star", "count": 360 },
+        { "name": "4 star", "count": 2300 },
+        { "name": "5 star", "count": 11600 }
+      ]
+    },
+    {
+      "image": "https://cdn-icons-png.flaticon.com/512/919/919836.png",
+      "title": "MongoDB",
+      "companyName": "MongoDB Inc.",
+      "id": 12,
+      "description": "A flexible NoSQL database designed for modern applications that need scalable and document-oriented data storage.",
+      "size": 58,
+      "reviews": 7300,
+      "ratingAvg": 4.6,
+      "downloads": 1600000,
+      "ratings": [
+        { "name": "1 star", "count": 110 },
+        { "name": "2 star", "count": 160 },
+        { "name": "3 star", "count": 340 },
+        { "name": "4 star", "count": 1740 },
+        { "name": "5 star", "count": 4950 }
+      ]
+    }
+  ]
+}
