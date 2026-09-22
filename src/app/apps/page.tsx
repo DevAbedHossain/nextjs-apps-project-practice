@@ -1,11 +1,28 @@
-import SearchFilter from '@/components/apps/SearchFilter';
 import AppsCard from '@/components/shared/AppsCard';
 import { getAllApps } from '@/lib/Apps';
 import { IApps } from '@/types/apps.type';
 
+
+
 const AppsPage = async () => {
 
     const apps = await getAllApps();
+
+    // const [appName, setAppName] = useState<string>("")
+
+    // // const getAppsName = (value: string) => {
+    // //     setAppName(value)
+    // // }
+
+
+    // const valueAppName = (appsList: IApps[]) => {
+    //     const appInputName = appsList.filter((app: IApps) => app.title.toLowerCase().includes(appName.toLowerCase()));
+    //     console.log(appInputName);
+
+    //     return [...appInputName];
+    // }
+
+    // const finalFilterApp = valueAppName(apps);
 
 
     return (
@@ -18,7 +35,9 @@ const AppsPage = async () => {
                 <div className="pt-10 pb-5 flex justify-between items-center">
                     <h4 className="text-xl font-semibold">Apps Found ({apps.length})</h4>
 
-                    <SearchFilter apps={apps} />
+                    {/* <input type="text" value={appName} onChange={(e) => setAppName(e.target.value)} className="input outline-0 border-amber-50" placeholder="Play Store" />
+
+                    <h2>{appName}</h2> */}
 
                 </div>
 

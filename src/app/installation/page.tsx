@@ -1,5 +1,4 @@
 "use client";
-import AppsCard from '@/components/shared/AppsCard';
 import AppsInstallCart from '@/components/shared/AppsInstallCart';
 import { AppContext } from '@/context/AppProvider';
 import { IApps } from '@/types/apps.type';
@@ -39,7 +38,7 @@ const InstallationPage = () => {
                 <div className="flex justify-between items-center">
                     <h4 className="text-xl font-semibold text-[#001931] py-5 mt-4">Apps Found ({installedApps.length})</h4>
 
-                    <select value={sortBy} onChange={(e) => setSortBy(e.target.value as "size" | "rating" | "installed")} defaultValue="size" className="select outline-0">
+                    <select value={sortBy} onChange={(e) => setSortBy(e.target.value as "size" | "rating" | "installed")} className="select outline-0">
                         <option value={"size"}>Sort by Size</option>
                         <option value={"rating"}>Sort by Rating</option>
                         <option value={"installed"}>Sort by Installed</option>
