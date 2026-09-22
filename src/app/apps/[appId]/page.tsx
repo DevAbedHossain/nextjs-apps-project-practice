@@ -6,7 +6,7 @@ import { notFound } from "next/navigation";
 export const generateStaticParams = async () => {
     const getApps = await getAllApps()
 
-    return getApps.map((app: IApps) => ({ appId: app.id }))
+    return getApps.map((app: IApps) => ({ appId: String(app.id) }))
 }
 
 interface AppDetailsProms {
