@@ -1,8 +1,9 @@
 "use client";
 import { AppContext } from '@/context/AppProvider';
 import { IApps } from '@/types/apps.type';
-import React, { useContext } from 'react';
-import { toast } from 'react-toastify/unstyled';
+import { useContext } from 'react';
+import { toast } from 'react-toastify';
+
 
 const InstallAppButton = ({ app }: { app: IApps }) => {
 
@@ -10,20 +11,21 @@ const InstallAppButton = ({ app }: { app: IApps }) => {
 
     const handleInstallApp = () => {
         console.log("Button Trigger install");
-        console.log(app)
+        console.log(app);
 
 
-        const isInstalled = installedApps.find(installedApp => installedApp.id === app.id)
+        const isInstalled = installedApps.find(installedApp => installedApp.id === app.id);
 
-        console.log(isInstalled)
+        console.log(isInstalled);
 
         if (isInstalled) {
-            return toast.error("Already Installed")
+            toast.error("Already Installed");
+            return;
         }
 
-        setInstalledApps([...installedApps, app])
+        setInstalledApps([...installedApps, app]);
 
-        toast.success(`${app.title} install successfully`)
+        toast.success(`${app.title} install successfully`);
     }
 
     return (
