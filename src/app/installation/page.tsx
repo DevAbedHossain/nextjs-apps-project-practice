@@ -1,12 +1,34 @@
 "use client";
 import AppsCard from '@/components/shared/AppsCard';
+import AppsInstallCart from '@/components/shared/AppsInstallCart';
 import { AppContext } from '@/context/AppProvider';
 import { IApps } from '@/types/apps.type';
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 
 const InstallationPage = () => {
 
     const { installedApps } = useContext(AppContext);
+
+    const [sortBy, setSortBy] = useState<"size" | "rating" | "installed">("size");
+
+    const handleSortByApps = (apps: IApps[]) => {
+
+        const filterApps = [...apps]
+
+        if (sortBy === "size") {
+            return filterApps.sort((a, b) => b.size - a.size)
+        } else if (sortBy === "rating") {
+            return filterApps.sort((a, b) => b.ratingAvg - a.ratingAvg)
+        } else if (sortBy === "installed") {
+            return filterApps.sort((a, b) => b.downloads - a.downloads)
+        }
+
+        return filterApps;
+    }
+
+    const findApps = handleSortByApps(installedApps);
+
+
 
     return (
         <section className="bg-[##f5f5f5]">
@@ -17,16 +39,16 @@ const InstallationPage = () => {
                 <div className="flex justify-between items-center">
                     <h4 className="text-xl font-semibold text-[#001931] py-5 mt-4">Apps Found ({installedApps.length})</h4>
 
-                    <select defaultValue="size" className="select">
+                    <select value={sortBy} onChange={(e) => setSortBy(e.target.value as "size" | "rating" | "installed")} defaultValue="size" className="select outline-0">
                         <option value={"size"}>Sort by Size</option>
                         <option value={"rating"}>Sort by Rating</option>
                         <option value={"installed"}>Sort by Installed</option>
                     </select>
                 </div>
 
-                <div className="grid grid-cols-4 gap-4 py-3">
+                <div className="py-3 space-y-4">
                     {
-                        installedApps.map((app: IApps) => <AppsCard key={app.id} app={app} />)
+                        findApps.map((app: IApps) => <AppsInstallCart key={app.id} app={app} />)
                     }
                 </div>
             </div>
